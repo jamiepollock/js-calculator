@@ -113,3 +113,8 @@ body {
     height: 3em;
     color: darkred;
 }
+@media screen and (max-width: 63.9375em) {
+    .calculator {
+        width: 80%;
+    }
+}
