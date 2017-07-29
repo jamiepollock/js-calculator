@@ -1,0 +1,115 @@
+body {
+    margin: 2em;
+    padding: 0;
+}
+.calculator {
+  width: 300px;
+  margin: 0 auto;
+  padding: 1em;
+  border: 1px solid #000;
+  background: #c0c0c0;
+  box-shadow:  1em 1em 1em rgba(0, 0, 0, .5);
+}
+.calculator header {
+    display: flex;
+    height: 2em;
+    margin: 0 0 1em 0;
+}
+.calculator header .battery {
+    width: 40%;
+    height: 100%;
+    display: flex;
+}
+.calculator header .brand {
+    margin: 0;
+    width: 60%;
+    text-align: right;
+    font-family: monospace;
+    color: dimgrey;
+} 
+.calculator .battery span {
+    flex: 1;
+    height: 100%;
+    border: 1px solid #000;
+    background-color: goldenrod;
+}
+.calculator button {
+    background-color: grey;
+    color: darkorange;
+    font-size: 1.5em;
+    border: 1px solid black;
+    border-collapse: collapse;
+    cursor: pointer;
+    border-radius: 1px;
+}
+.calculator button:focus {
+    background-color: darkgrey;
+    font-weight: bold;
+}
+
+.calculator button.equals {
+    background-color: goldenrod;
+    color: black;
+}
+.calculator button.equals:focus {
+    background-color: darkgoldenrod;
+}
+
+.inputs {
+    display: flex;
+    height: 300px;
+}
+
+.inputs > .numbers {
+  flex: 3;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+}
+.inputs > .controls,
+.inputs > .resets {
+  flex: 1;
+  height: 100%;
+}
+.output {
+  width: 100%;
+  font-size: 3em;
+  text-align: right;
+  padding: 0;
+  margin: 0 0 0.5em 0;
+  border-width: 0;
+  outline: 1px solid #c0c0c0;
+  font-family: Monospace;
+  font-style: italic;
+  background-color: darkseagreen;
+  color: darkolivegreen;
+}
+.resets > button,
+.numbers > button {
+  flex-grow: 1;
+  width: 33%;
+  padding: 0;
+  margin: 0;
+}
+
+.numbers > button {
+    height: 25%;
+}
+.controls {    
+    margin-left: 0.25em; 
+}
+.controls > button {
+    height: 20%;
+}
+.resets {
+    display: flex;
+    align-content: center;
+    margin: 0.25em 0 0 0;
+}
+.controls > button {
+  width: 100%;  
+}
+.resets > button {
+    height: 3em;
+    color: darkred;
+}

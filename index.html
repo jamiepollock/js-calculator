@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Calculator</title>
+  <link rel="stylesheet" type="text/css" href="style.css" />
+</head>
+<body>
+    <form class="calculator">
+        <header>
+            <div class="battery"><span></span><span></span><span></span></div>
+            <h1 class="brand">Calculator</h1>
+        </header>
+        <input type="text" class="output" readonly value="0" />
+        <div class="inputs">
+            <div class="numbers">
+                <button>1</button><button>2</button><button>3</button>
+                <button>4</button><button>5</button><button>6</button>
+                <button>7</button><button>8</button><button>9</button>
+                <button>-/+</button><button>0</button><button>.</button>
+            </div>
+            <div class="controls">
+                <button>+</button>
+                <button>-</button>
+                <button data-operation="x">&times;</button>
+                <button data-operation="/">&divide;</button>
+                <button class="equals">=</button>
+            </div>
+        </div>
+        <div class="resets">
+            <button type="reset"  class="clear-all" title="Clear All">C</button><button type="reset" class="clear" title="Clear">CE</button><button class="backspace" title="Backspace">&lArr;</button>            
+        </div>
+    </form>
+    <script type="text/javascript" src="script.js"></script>
+</body>
+</html>
