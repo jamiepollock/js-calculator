@@ -64,6 +64,7 @@ body {
   flex: 3;
   display: flex;
   flex-wrap: wrap;
+  height: 100%;
 }
 .inputs > .controls,
 .inputs > .resets {
